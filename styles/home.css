@@ -450,7 +450,7 @@ footer {
         height: 100px;
         position: absolute;
         right: 2rem;
-        font-size: 3rem;
+        font-size: 2rem;
         display: flex;
         align-items: center;
         color: hsl(120, 0%, 100%);
@@ -561,6 +561,7 @@ footer {
     }
     h4.p{
         margin: 5rem 0 3rem 0;
+
     }
     h4.p.first{
         margin-top: 5rem;
@@ -571,7 +572,7 @@ footer {
         flex-direction: column;
         align-items: center;
         position: relative;
-        margin-top: 100px;
+        margin-top: 100px;  
     }
     .about{
         flex-direction: column;
