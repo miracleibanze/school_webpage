@@ -1,0 +1,19 @@
+.Photos{
+  min-width: 100vw;
+  min-height: 300px;
+  margin: 3rem 0;
+}
+
+.Photos .img-container{
+  width: 100vw;
+  background-color: cyan;
+  max-height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Photos .img-container .img-on-liblary{
+  height: 7rem;
+  border: 1px solid;
+  flex-grow: 5;
+  flex-basis: 12rem;
+}
