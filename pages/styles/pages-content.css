@@ -4,7 +4,7 @@ section{
 
 
 .Photos{
-  min-width:100vw;
+  min-width:100%;
   min-height: 300px;
   margin: 3rem 0;
   display: flex;
@@ -18,7 +18,7 @@ section{
   padding: 0 0 1rem 0;
 }
 .Photos .img-container{
-  width: 85vw;
+  width: 85%;
   border-bottom: 2px solid cyan;
   max-height: fit-content;
   display: flex;

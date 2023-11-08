@@ -5,7 +5,9 @@
     box-sizing: border-box;
     font-family: 'poppins',sans-serif;
 }
-
+::-webkit-scrollbar{
+    display: none;
+}
 /*********
     body html
 **********/
@@ -226,7 +228,7 @@ ul.link li a.active{
     visibility: hidden;
     position: absolute;
     right: 0;
-    width: 50vw;
+    width: 50%;
     height: 80%;
 }
   
@@ -242,9 +244,23 @@ ul.link li a.active{
   }
 
 .about{
-    background-color: aqua;
     height: auto;
 }
+
+.sidebar{
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+    padding: 0 3rem 0 2rem;
+}
+.sidebar-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    color: #4d4d4d;
+}
+
 
 
 
@@ -255,7 +271,7 @@ ul.link li a.active{
 
 footer {
 
-    width: 100%;
+    width: 100vw;
  
     height: 300px;
 
@@ -264,7 +280,7 @@ footer {
     margin-top: 200px;
 
     background-color: #333;
-
+    position: absolute;
     color: #fff;
 
     display: flex;
@@ -370,6 +386,7 @@ footer {
     .intro-paragraph2{
         height: 50%;
         width: fit-content;
+        flex-direction: column;
     }
     .media-show{
         width: 100%;
@@ -391,7 +408,7 @@ footer {
     }
 
 
-@media (min-width: 950px){
+@media (min-width: 1000px){
     header.container{
         max-height: 100vh;
     }
@@ -408,6 +425,28 @@ footer {
     .menu-part .hyperlink-part ul li a{
         font-size: 1em;
         gap: 10px;
+    }
+    body{
+        width: 75vw;
+        overflow-x: visible;
+    }
+    h4.p{
+        width: 100%;
+    }
+
+    .sidebar{
+        display: block;
+        visibility: visible;
+        pointer-events: visible;
+        position: absolute;
+        top: 110vh;
+        right: 0;
+        left: 77vw;
+        width: 23vw;
+        height: 45%;
+        border-left: 2px solid cyan;
+        overflow: hidden;
+        color: #4d4d4d;
     }
 }
 
