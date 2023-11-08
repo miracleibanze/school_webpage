@@ -197,56 +197,18 @@ ul.link li a.active{
     height: 95%;
 
 }
-
-.media-show-bg{
-    background-image: url('./../../images/profile.png');
-    background-size: 100%;
-    background-position: center;
-}
-.media-show{
-    position: relative;
-    right: 0;
-    width: 48%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-#show{
+.media img{
     position: absolute;
-    right: 50%;
-    z-index: 888;
-    outline: none;
-    background: none;
-    font-size: 3rem;
-    color: hsl(236, 100%, 50%);
-    border: none;
+    height: 30rem;
+    width: 50rem;
+    z-index: 2;
 }
-.box{
-    display: none;
-    visibility: hidden;
+
+.media i{
     position: absolute;
-    right: 0;
-    width: 50%;
-    height: 80%;
+    z-index: 10;
+    width: 5rem;
 }
-  
-  .container-show{
-    display: block;
-    visibility: visible;
-  }
-
-  .media-play{
-    display: none;
-    visibility: hidden;
-    pointer-events: none;
-  }
-
-.about{
-    height: auto;
-}
-
 .sidebar{
     display: none;
     visibility: hidden;

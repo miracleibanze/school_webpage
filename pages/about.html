@@ -45,7 +45,7 @@
 					<div class="hyperlink-part">
 						<ul class="link">
 							<li>
-								<a href="./../home.html"><i class="fa-solid fa-home">
+								<a href="./../index.html"><i class="fa-solid fa-home">
                 </i>Home</i></a>
 								<div class="sub-menu-1"></div>
 							</li>
@@ -144,10 +144,9 @@
 
 
 
-		<div class="media-show media-show-bg">
-			<button id="show" class="show">
-				<i class="fa-solid fa-circle-play"></i>
-			</button>
+		<div class="media">
+			<img src="./../images/profile.png" alt="">
+			<i class="fa-solid fa-circle-play"></i>
 			<video controls class="box">
 				<source src="./../video/about-video.mp4" type="video/mp4">
 			</video>
@@ -156,58 +155,6 @@
 
      
 
-
-  <script>const dropIcon = document.querySelector('.menuIcon');
-
-		dropIcon.addEventListener('click',() => {
-				let dropMenu = document.querySelector('.hyperlink-part');
-		
-				if (dropMenu.classList.contains('menuShow')){
-						dropMenu.classList.remove('menuShow');
-						dropIcon.innerHTML = '<i class="fa-solid fa-bars"></i>'
-		
-				}
-				
-				else{
-						dropMenu.classList.add('menuShow');
-						dropIcon.innerHTML = '<i class="fa-solid fa-xmark"></i>'
-				}
-		
-		});
-		
-		const video = document.querySelector('.draw-intro');
-		
-		babyeyi.addEventListener('click',() => {
-				let video = document.querySelector('.about-video');
-		
-				if (video.classList.contains('show')){
-						video.classList.remove('show');
-		
-				}
-				
-				else{
-						video.classList.add('show');
-				}
-		
-		});
-		
-		
-		
-
-
-
-
-			let imgShow = document.querySelector('#show');
-			let bg = document.querySelector('.media-show');
-			imgShow.addEventListener('click',() => {
-				let img = document.querySelector('.box');
-				if (!img.classList.contains('container-show')){
-					img.classList.add('container-show');
-					imgShow.classList.add('media-play');
-					bg.classList.remove('media-show-bg');
-				}
-      });
-	</script>
 	</div>
 
     </div>
