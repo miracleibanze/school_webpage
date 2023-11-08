@@ -8,6 +8,7 @@ preloader section
   min-height: 100vh;
   max-width:100vw;
   max-height: 100vh;
+  inset: 0;
   background-color:hsl(0, 100%, 100%) ;
   display:flex;
   justify-content: center;
@@ -15,6 +16,7 @@ preloader section
   background-color:#011015;
   z-index: 99999;
 }
+
 .loader-sorter{
   min-width: 200px;
   min-height: 200px;
@@ -84,7 +86,7 @@ preloader section
   left: 0;
   right: 0;
   left: 0;
-  animation: optOut 2s ease-in-out forwards;
+  animation: optOut 1.5s ease-in-out forwards;
   pointer-events:none;
 }
 
@@ -95,7 +97,7 @@ preloader section
 }
 
 .load-finish .ring:nth-child(1){
-animation: rotateA 2s linear infinite;
+animation: rotateA 1.5s linear infinite;
 }
 
 @keyframes rotateA{
@@ -111,7 +113,7 @@ animation: rotateA 2s linear infinite;
 
 }
 .load-finish .ring:nth-child(2){
-animation: rotateb 2s linear infinite;
+animation: rotateb 1.5s linear infinite;
 }
 
 @keyframes rotateb{
@@ -127,7 +129,7 @@ animation: rotateb 2s linear infinite;
 
 }
 .load-finish .ring:nth-child(3){
-animation: rotatec 2s linear infinite;
+animation: rotatec 1.5s linear infinite;
 }
 
 @keyframes rotatec{

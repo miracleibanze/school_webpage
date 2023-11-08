@@ -84,3 +84,49 @@ section{
   left: -2.2rem;
   font-size: 130%;
 }
+
+.studies-container{
+  width: 27rem;
+  background-color: cyan;
+  border-radius: 20px;
+}
+.studies-container ul li .studies-submenu{
+  display: none;
+  visibility: hidden;
+  pointer-events: none;
+  border-left: 1px solid #000;
+}
+.studies-container ul li .class-choice:hover .studies-submenu,
+.studies-container ul li .class-choice:active .studies-submenu{
+  display: block;
+  visibility: visible;
+  pointer-events: all;
+  position: relative;
+  top: -18px;
+  left: -14px;
+  padding: 10px 0 0 0;
+}
+.studies-container ul li .class-choice:hover .studies-submenu li,
+.studies-container ul li .class-choice:active .studies-submenu li{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.studies-container ul li .class-choice:hover .studies-submenu li button,
+.studies-container ul li .class-choice:active .studies-submenu li button{
+  padding: 0 10px;
+  background-color: hsla(90, 100%, 49%, 0.699);
+  border: none;
+  border-radius: 10px;
+  margin: 2px 3px;
+}
+
+.notice{
+  background-color: yellow;
+  color: red;
+  font-size: 75%;
+  text-align: center;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 40px ;
+}

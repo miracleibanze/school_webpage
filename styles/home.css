@@ -251,6 +251,9 @@ section.esmtraits{
         margin: 1.2rem;
         max-width: 600px;
     }
+    .main-box .icon i.fa{
+        color: hsl(193, 27%, 87%);
+    }
     .main-box .icon{
         margin:20px 10px;
         text-align :center ;

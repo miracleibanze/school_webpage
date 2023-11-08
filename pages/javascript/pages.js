@@ -36,3 +36,18 @@ babyeyi.addEventListener('click',() => {
 });
 
 
+const classChoice = document.querySelectorAll('.class-choice');
+
+classChoice.addEventListener('click', () => {
+    let choosedClass = document.querySelectorAll('.studies-submenu');
+    
+    if (choosedClass.classList.contains('.studies-submenu-show')){
+        choosedClass.classList.remove('.studies-submenu-show');
+    }
+    else{
+        choosedClass.classList.add('.studies-submenu-show');
+    }
+});
+
+
+
