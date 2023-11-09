@@ -127,13 +127,18 @@ ul.link li a.active{
     height: 100%;
 }
 .carousel-inner .carousel-item:first-child{
-    background-image: url("./../../images/image_20230913_210048_.png");
+    background-image: url("./../../images/refectory-view-sit.jpg");
+    background-size: 120%;
+    background-position: top -5vh left -20vw;
 }
 .carousel-inner .carousel-item:nth-child(2){
-    background-image: url("./../../images/image_20230913_210213_.png");
+    background-image: url("./../../images/class-view.jpg");
+    background-size: cover;
 }
 .carousel-inner .carousel-item:last-child{
-    background-image: url("./../../images/image_20230913_210336_.png");
+    background-image: url("./../../images/assemble-time.jpg");
+    background-size: 200%;
+    background-position: top -20vh left -72vw;
 }
 .carousel-inner .carousel-item{
     height: 100%;
@@ -146,6 +151,18 @@ ul.link li a.active{
     -moz-background-size: 100% 170%;
     -ms-background-size: 100% 170%;
 
+}
+.carousel-inner .carousel-item *{
+    z-index: 2;
+}
+.carousel-inner .carousel-item::after{
+    position: absolute;
+    content: '';
+    inset: 0;
+    pointer-events: none;
+
+    background: linear-gradient(hsla(240, 100%, 7%,1),hsla(240, 100%, 7%,0.02),hsla(240, 100%, 7%,0.07),hsla(240, 100%, 7%,0.1),hsla(240, 100%, 7%,0.18),hsla(240, 100%, 7%,0.34),hsla(240, 100%, 7%,0.4),hsla(240, 100%, 7%,0.8),hsla(240, 100%, 7%,0.9),hsla(240, 100%, 7%,1));
+    z-index: 1;
 }
 .carousel-inner .carousel-item .carousel-item-content{
     opacity: 1;
