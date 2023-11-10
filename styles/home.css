@@ -132,9 +132,9 @@ ul.link li a.active{
     height: 100%;
 }
 .carousel-inner .carousel-item:first-child{
-    background-image: url("./../images/refectory-view-sit.jpg");
+    background-image: url("./../images/Pic3.JPG");
     background-size: 120%;
-    background-position: top -5vh left -20vw;
+    background-position: top 30% left -20vw;
 }
 .carousel-inner .carousel-item:nth-child(2){
     background-image: url("./../images/class-view.jpg");
