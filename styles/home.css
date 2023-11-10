@@ -137,7 +137,7 @@ ul.link li a.active{
     background-position: top 30% left -20vw;
 }
 .carousel-inner .carousel-item:nth-child(2){
-    background-image: url("./../images/class-view.jpg");
+    background-image: url("./../images/school-boys.JPG");
     background-size: cover;
 }
 .carousel-inner .carousel-item:last-child{
@@ -335,6 +335,7 @@ section.esmtraits{
         width: 38%;
         aspect-ratio: 16/14;
         margin: auto 0;
+        filter: contrast(90%);
     }
     .about-part{
         position: relative;
