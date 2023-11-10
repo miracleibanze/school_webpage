@@ -181,6 +181,12 @@ ul.link li a.active{
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    animation: optIn 1.2s ease-in forwards;
+}
+@keyframes optIn{
+    0%,
+    20%{opacity: 0;scale: 0.5;}
+    100%{opacity: 1;scale: 1;}
 }
 .carousel-item-content h1{
     color: #fff;

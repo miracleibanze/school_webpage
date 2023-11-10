@@ -119,8 +119,8 @@ ul.link li a.active{
     top: 0;
     right: 0;
     left: 0;
-    height: 80%;
-    z-index: -1000;
+    height: 120%;
+    z-index: -100;
 }
 .carousel-inner{
     width: 100%;
@@ -172,11 +172,16 @@ ul.link li a.active{
     top: 40%;
     width: 80%;
     z-index: 33;
-    border: 1px solid hsl(120, 0%, 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    animation: optIn 1.2s ease-in forwards;
+}
+@keyframes optIn{
+    0%,
+    20%{opacity: 0;scale: 0.5;}
+    100%{opacity: 1;scale: 1;}
 }
 .carousel-item-content h1{
     color: #fff;
@@ -186,6 +191,27 @@ ul.link li a.active{
 }
 .carousel-item-content p{
     text-align: center;
+    color:rgb(194, 199, 204);
+}
+.link-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 2rem 0;
+
+}
+.link-container button{
+    width: fit-content;
+    padding: 5px 10px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+.link-container button a{
+    text-decoration: none;
+    color: white;
 }
 
 .news-logo{
@@ -213,18 +239,6 @@ ul.link li a.active{
     align-items: center;
     height: 95%;
 
-}
-.media img{
-    position: absolute;
-    height: 30rem;
-    width: 50rem;
-    z-index: 2;
-}
-
-.media i{
-    position: absolute;
-    z-index: 10;
-    width: 5rem;
 }
 .sidebar{
     display: none;
