@@ -11,11 +11,11 @@
 /*********
     body html
 **********/
-
 html,
 body{
     overflow-x: hidden;
     perspective: 500px;
+    min-height: 100vw;
 }
 
 /*header style*/
@@ -293,6 +293,7 @@ footer {
 
 
 @media (max-width:768px){
+    
     header.container{
         height: 14rem;
     }
@@ -369,7 +370,9 @@ footer {
     .carousel-inner .carousel-item .carousel-item-content{
         display: none;
     }
-    }
+    
+
+
     .introduction2{
         height: auto;
         padding: 3rem;
@@ -399,8 +402,13 @@ footer {
         margin: auto;
         right: 0;
     }
+    .address{
+        display: flex;
+        flex-direction: column;
+        
+    }
 
-
+}
 @media (min-width: 1000px){
     header.container{
         max-height: 100vh;

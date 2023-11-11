@@ -177,3 +177,24 @@ section{
 
   color: rgb(96, 119, 136);
 }
+
+.address{
+  width: 100%;
+  aspect-ratio: 15/7;
+  margin: 3rem 0;
+  padding: 0;
+  display: flex;
+}
+
+.location{
+  width: 60%;
+  height: 100%;
+  background-color: aqua;
+  margin: 0;
+}
+
+.location-description{
+  width: 40%;
+  height: 100%;
+  background-color: sienna;
+}
