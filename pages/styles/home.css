@@ -367,6 +367,15 @@ footer {
         -ms-background-size: 170% 100%;
     
     }
+    .carousel-inner .carousel-item:first-child{
+        background-position-y: 30%;
+    }
+    .carousel-inner .carousel-item:nth-child(2){
+        background-position-y: 30%;
+    }
+    .carousel-inner .carousel-item:last-child{
+        background-position-y: 15%;
+    }
     .carousel-inner .carousel-item .carousel-item-content{
         display: none;
     }
@@ -405,7 +414,15 @@ footer {
     .address{
         display: flex;
         flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .location{
+        width: 100%;
         
+    }
+    .location-description{
+        width: 100%;
     }
 
 }
