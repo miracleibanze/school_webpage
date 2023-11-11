@@ -202,16 +202,19 @@ ul.link li a.active{
 
 }
 .link-container button{
-    width: fit-content;
-    padding: 5px 10px;
-    background: transparent;
-    color: white;
-    border: 1px solid white;
-    border-radius: 1rem;
+  padding: 0 2rem;
+  margin: 2rem 0;
+  border-radius: 20px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 150%;
+  z-index: 10;
 }
-.link-container button a{
-    text-decoration: none;
-    color: white;
+
+.link-container button:hover{
+  background-color: cyan;
+  color: bisque;
 }
 
 .news-logo{
