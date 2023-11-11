@@ -245,9 +245,77 @@ section.adminstration{
   left: 10%;
   z-index: 2;
 }
+.one-adminstration-details ul{
+  list-style: none;
+}
+.one-adminstration-details ul li{
+  font-size: 75%;
+}
+.one-adminstration-details ul li:nth-child(3){
+  font-size: 70%;
+}
+.name{
+  font-size: 180%;
+  font-weight: 900;
+  text-decoration: underline;
+}
 .one-adminstration img{
   position: absolute;
   width: 17rem;
   margin: 0 auto;
   z-index: -2;
+}
+
+
+
+.message-on-contact p{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+.message-on-contact p *{
+  flex-grow: 5;
+  aspect-ratio: 13/1;
+}
+
+.message-on-contact p label{
+  border-top-left-radius: 30px;
+  border-top-right-radius: 40px;
+  border: 2px solid;
+  border-bottom: none;
+  display: flex;
+  justify-content: center;
+  background-color: cyan;
+}
+.message-on-contact p input{
+  border: 2px solid;
+  border-top: none;
+  outline: none;
+}
+.choose-cat{
+  width: 90%;
+  margin: 0 0 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.choose-cat div {
+  position: relative;
+  width: 50%;
+}
+.message-on-contact p:has(.names) input::placeholder{
+  position: relative;
+  left: 40%;
+}
+.message-on-contact p:has(.email) input::placeholder{
+  position: relative;
+  left:70%;
+}
+.send-message{
+  width: 90%;
+  padding: 8px;
+  border: 2px solid cyan;
+  background-color: none!important;
+  color: cyan;
+  border-radius: 20px ;
 }

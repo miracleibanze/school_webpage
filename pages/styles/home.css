@@ -222,24 +222,48 @@ ul.link li a.active{
 
 
 
-  .introduction2{
-    width: 100%;
-    min-height: 540px;
+.introduction2{
+    height: auto;
+    padding: 3rem;
+    flex-direction: column-reverse;
+    gap: 3rem;
+    padding: 3rem;
     display: flex;
     overflow: hidden;
-    padding: 3rem;
     justify-content: space-between;
     align-items: center;
 }
+.intro-paragraph2{
+    height: 50%;
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+.media-show{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+/*
 
+  .introduction2{
+    width: 100%;
+    min-height: 540px;
+}
 .intro-paragraph2{
 
     width: 44%;
-    display: flex;
-    align-items: center;
-    height: 95%;
 
 }
+*/
 .sidebar{
     display: none;
     visibility: hidden;
@@ -330,7 +354,7 @@ footer {
         overflow: hidden;
         position: absolute;
         min-width: 100vw;
-        background-color: #0000009a;
+        background-color: #000000bb;
         left: 0;
         display: flex;              
         flex-direction: column;
@@ -381,30 +405,6 @@ footer {
     }
     
 
-
-    .introduction2{
-        height: auto;
-        padding: 3rem;
-        flex-direction: column-reverse;
-        gap: 3rem;
-    }
-    .intro-paragraph2{
-        height: 50%;
-        width: fit-content;
-        flex-direction: column;
-    }
-    .media-show{
-        width: 100%;
-        height: 500px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .box{
-        position: relative;
-        width: 100%;
-        height: 400px;
-    }
     #show {
         width: 80vw;
         position: absolute;
@@ -461,7 +461,7 @@ footer {
         right: 0;
         left: 77vw;
         width: 23vw;
-        height: 45%;
+        height: 65%;
         border-left: 2px solid cyan;
         overflow: hidden;
         color: #4d4d4d;
