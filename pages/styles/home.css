@@ -380,6 +380,9 @@ footer {
         font-size: 2rem;
         font-weight: 500;
     }
+    .download{
+        display: flex;
+    }
     ul.link li a:hover,ul.link li a.active{
         background: transparent!important;
         border-radius: 0%;

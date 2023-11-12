@@ -414,7 +414,9 @@ section.esmtraits{
         font-weight :600;
         
     }
-    
+    .download{
+        display: none;
+    }
     
     .courses .single-course-box p{
         font-size :14px;
@@ -550,6 +552,9 @@ footer {
         border-bottom: 2px solid hsl(91, 120%, 120%);
     
     }
+    .download{
+        display: flex;
+    }
     .carousel-inner .carousel-item{
         background-size: 120% 100%;
         -webkit-background-size: 170% 100%;
@@ -683,7 +688,9 @@ footer {
     h4.p{
         width: 100%;
     }
-
+    .download{
+        display: none;
+    }
     .sidebar{
         display: block;
         visibility: visible;
