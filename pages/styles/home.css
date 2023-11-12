@@ -55,6 +55,9 @@ header.container{
     align-items: center;
 }
 
+.download{
+    display: none;
+}
 .menu-logo img{
     width: 90%;
 }
@@ -471,6 +474,9 @@ footer {
         border-left: 2px solid cyan;
         overflow: hidden;
         color: #4d4d4d;
+    }
+    .download{
+        display: none;
     }
 }
 
