@@ -112,6 +112,11 @@ section{
   pointer-events: none;
   border-left: 1px solid #000;
 }
+.studies-submenu a{
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
 .studies-container ul li .class-choice:hover .studies-submenu,
 .studies-container ul li .class-choice:active .studies-submenu{
   display: block;
