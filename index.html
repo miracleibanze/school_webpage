@@ -3,437 +3,313 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESM - Homepage</title>
-    <link rel="stylesheet" href="./styles/home.css">
-		<link rel="stylesheet" href="./styles/preloader.css">
-		<link rel="shortcut icon" href="./images/esm logo.png" type="image/x-icon">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-css/1.4.6/select2-bootstrap.min.css" />
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>E.S Mukingi: Welcome to our school webpage</title>
+    <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<!--Preloader-->
-	<div class="preloader">
-		<div class="loader-sorter">
-				<div class="ring"></div>
-				<div class="ring"></div>
-				<div class="ring"></div>
-				<span>Loading ....</span>
-		</div>     
- </div>
- <script>
- window.addEventListener("load", () => {
-	 const preloader = document.querySelector(".preloader");
-	 preloader.classList.add("load-finish");
- })
- </script> 
+    <header>
+        <nav>
+            <a href="/"><img src="./assets/header-logo.png" alt="logo" class="logo"></a>
+            <div class="nav-links">
+               <div class="hamburger"> 
+                    <img src="./assets/hamburger.svg" alt="hamburger">
+                </div>
+                <ul class="menu">
+                    <a href="/"><li><i class="fa fa-home"></i>&nbsp;Home</li></a>
+                    <a href="./components/About.html"><li><i class="fa fa-users"></i>&nbsp;About</li></a>
+                    <a href="./components/Blog.html"><li><i class="fa fa-clone"></i>&nbsp;Blog</li></a>
+                    <a href="./components/Courses.html"><li><i class="fa fa-graduation-cap"></i>&nbsp;Courses</li></a>
+                    <a href="./components/Contact.html"><li><i class="fa fa-phone"></i>Contact</li></a>
+                </ul>
+            </div>
+        </nav>
 
-<!--Prloader end-->
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-img-1">
+                    <div class="welcome">
+                        <p>it's time to get to school</p>
+                        <h1>
+                            <span>ECOLE</span> SECONDAIRE<br/>DE <span>MUKINGI</span>
+                        </h1>
+                        <p>welcome to our school of adversity in knowledge, where we precisely depend on increasing the student's power of <span>Reasoning</span>, and the ability to implement the skills they are give <span>Professional teachers.</span></p>
+                    </div>
+                </div>
+                <div class="carousel-img-2">
+                    <div class="welcome">
+                        <p>it's time to get to school</p>
+                        <h1>
+                            <span>ECOLE</span> SECONDAIRE<br/>DE <span>MUKINGI</span>
+                        </h1>
+                        <p>welcome to our school of adversity in knowledge,where the student's needs are our <span>priority</span>, and the support we give builds the future <span>leadership humor</span>  that we propare by our Care.</p>
+                    </div>
+                </div>
+                <div class="carousel-img-3">
+                    <div class="welcome">
+                        <p>it's time to get to school</p>
+                        <h1>
+                            <span>ECOLE</span> SECONDAIRE<br/>DE <span>MUKINGI</span>
+                        </h1>
+                        <p>welcome to our school of adversity in knowledge, where we precisely depend on increasing the student's power of <span>Reasoning</span>, and the ability to implement the skills they are give <span>Professional teachers</span></p>
+                    </div>
+                </div>
+                <div class="carousel-img-1">
+                    <div class="welcome">
+                        <p>it's time to get to school</p>
+                        <h1>
+                            <span>ECOLE</span> SECONDAIRE<br/>DE <span>MUKINGI</span>
+                        </h1>
+                        <p>welcome to our school of adversity in knowledge, where we precisely depend on increasing the student's power of <span>Reasoning</span>, and the ability to implement the skills they are give <span>Professional teachers</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="page-navigation">
+        <a href="/">Home</a>
+        <a href="#Best">Our Best</a>
+        <a href="#About">About</a>
+        <a href="#Courses">Courses</a>
+        <a href="#Footer">Footer</a>
+    </section>
 
 
-<!--header-->
-	<header class="container">
-		<!--header menu-->
-		<header class="menu">
-			<div class="menu-container">
-				<div class="menu-logo">
-					<img src="./images/esm_logo-removebg-preview.png" alt="">
-				</div>
-				<div class="menu-part">
-					<div class="menuIcon">
-			      <i class="fa-solid fa-bars"></i>
-					</div>
-					<div class="hyperlink-part">
-						<ul class="link">
-							<li>
-								<a href="./home.html" class="active"><i class="fa-solid fa-home">
-                </i>Home</i></a>
-								<div class="sub-menu-1"></div>
-							</li>
+    <section id="Best">
+        <h1>Our Main Difference</h1>
+        	
+        <div class="Our-best-box teachers">
+            <div class="icon">
+                <i class="fa fa-home"></i>
+            </div>
+            <h3>professional teachers</h3>
+        
+            <p>Since we prioritize our student' learning, we can't afford to have teachers who can't meet the demand of our students' perfection. That's our first goal.</p>
+        
+        </div>
+    
 
-							<li>
-								<a href="./pages/about.html"><i class="fa-solid fa-user"></i> About</a>
-								<div class="sub-menu-1"></div>
-							</li>
 
-							<li>
-								<a href="./pages/news.html"><i class="fa-solid fa-clone"></i> News</a>
-								<div class="sub-menu-1"></div>
-							</li>
+        <div class="Our-best-box education">
+            <div class="icon">
+                <i class="fa fa-align-center"></i>
+            </div>
+            <h3>Quality education</h3>
 
-							<li>
-								<a href="./pages/Academic.html"><i class="fa-solid fa-graduation-cap"></i> Academic</a>
-									<div class="sub-menu-1"></div>
-								</li>						
-								
-								<li>
-									<a href="./pages/contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
-									<div class="sub-menu-1"></div>
-									</li>
-									<li class="download">
-									<a href="./images/esm logo.png" target="_blank" download="Babyeyi"><i class="fa-solid fa-download"></i> Download Babyeyi</a>
-									<div class="sub-menu-1"></div>
-									</li>
-						</ul>
-					</div>
-				</div>
-				
-			</div>
-		</header>
-		<!--mune end-->
-   
-		<!--slide start-->
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-   <div class="carousel-inner">
-     <div class="carousel-item active">
-       <div class="carousel-item-content">
-        <h1 class="carousel-header">Welcome to mukingi secondary School</h1>
-        <p class="carousel-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fugiat, repellendus voluptatibus eius delectus in. Voluptatibus, nisi obcaecati harum amet aspern</p>
-				<div class="link-container">
-					<button>Get Babyeyi</button>
-					<button>Contact Us</button>
-				</div>
+            <p>We improve qaulity education by providing all of the necessities to students; time space and provision in both aspects.</p>
+        
+        
+        </div>
+    
+    
+    
+    
+    
+        <div class="Our-best-box time">
+            <div class="icon">
+                <i class="fa fa-bell"></i>
+            </div>
+            <h3>Always on time</h3>
+
+            <p>Before succeding, one is mastering to work on time which is the best thing on ave to know to be called smart. so we all become 'SMART'</p>
+        
+        
+        </div>
+    
+    
+    
+
+
+        <div class="Our-best-box passionate">
+            <div class="icon">
+                <i class="fa fa-bank"></i>
+            </div>
+            <h3>we are pacionates</h3>
+
+            <p>Education isn't a thing that we try to do, we just do it because it's our passion and abouve it comes with love for student.</p>
+        
+        
+        </div>
+    
+    
+    
+    </section>
+
+    <section id="About">
+        <h1>About Us</h1>
+        <img src="./assets/school_gate.JPG" alt="about image">
+        <div class="about-part">
+            <h3>Welcome to our school</h3>
+            
+            <div>
+                <p>We are proudly welcoming you to our school of science and culture where student are have both science quantity and quality in studies.</p>
+                <p>We are open in for your services and we can't forget how treasury your children are in line</p>
+                <p>lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Nihil, dignissimos nostrum iusto assumenda
+                                eaqu voluptate pariatur temporibus dolorem optio
+                                odit placeatcum, suscipit, beatae excepturi eius
+                ea! Autem dolore illo?</p>
+            </div>
+                                    
+            <button class='blueShadow buttons'>
+                <p>Discover More <i class="fa fa-circle-arrow-right"></i></p>
+            </button>
+                    
+        </div>
+	
+    </section>
+
+    <section id="Courses">
+        
+		<h1>Our Best Courses</h1>
+                                            
+        <div class="courses-container">
+                    
+            <div class="single-course-box">
+                <i class="fa-solid fa-computer icon"></i>
+                <h3>computer science</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Et sunt ut hic ducimus
+                    tempora omnis a suscipit</p>
+
+                <div class="buttons">
+                    <a href="#">read more
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    </a>
+                </div>
+                
+            </div>
+        
+        
+            <div class="single-course-box">
+                <i class="fa-solid fa-comments-dollar icon"></i>
+                <h3>economics</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Et sunt ut hic ducimus
+                    tempora omnis a suscipit</p>
+
+                <div class="buttons blueShadow">
+                    <a href="#">read more
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    </a>
+                </div>
+    
+            </div>
+        
+        
+            <div class="single-course-box">
+                <div>	
+                    <i class="fa-solid fa-calculator icon"></i>
+                    <i class="fa-solid fa-brain icon"></i>
+                </div>
+                <h3>Mathematics</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Et sunt ut hic ducimus
+                    tempora omnis a suscipit</p>
+
+                <div class="buttons blueShadow">
+                    <a href="#">read more
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+        
+            <div class="single-course-box">
+                <i class="fa-solid fa-language icon"></i>
+                <h3>Languages</h3>
+            
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Et sunt ut hic ducimus
+                    tempora omnis a suscipit</p>
+
+                <div class="buttons blueShadow">
+                    <a href="#">read more
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    </a>
+                </div>
+                
+            </div>
+        
+            <div class="single-course-box">
+                <div>
+                    <i class="fa-solid fa-children icon"></i>
+                    <i class="fa-solid fa-pen-to-square icon"></i>
+                </div>
+                <h3>O'level education</h3>
+            
+                    <p>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Et sunt ut hic ducimus
+                        tempora omnis a suscipit</p>
+
+                    <div class="buttons blueShadow">
+                        <a href="#">read more
+                            <i class="fa-solid fa-circle-arrow-right"></i>
+                        </a>
+                </div>	
+            </div>
+            <div class="single-course-box">
+                <i class="fa-solid fa-hands-praying icon"></i>
+                <h3>ethical education</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Et sunt ut hic ducimus
+                    tempora omnis a suscipit</p>
+                <div class="buttons blueShadow">
+                    <a href="#">read more
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        
+        </div>
+	
+    </section>
+
+    <footer id="Footer">
+       <div class="img-footer">
+            <div>
+                    
+                <h1>Mukingi</h1>
+            </div>
+        </div>
+        <div class="footer-navigation">
+                
+            <a href="./components/Courses.html"><ul>
+                <li>Top Courses</li>
+                <li>Computer Science</li>
+                <li>Mathematics</li>
+                <li>Economics</li>
+                <li>Languages</li>
+                <li>O'level education</li>
+                <li>Ethical education</li>
+            </ul></a>
+            <a href="./components/Contact.html"><ul class="right">
+                <li>Quick Links</li>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Whatsapp</li>
+            </ul></a>
+            <a href="./components/About.html"><ul>
+                <li>Best supported by:</li>
+                <li>Professional Teachers</li>
+                <li>Quality Education</li>
+                <li>Always on time</li>
+                <li>Passion</li>
+            </ul></a>
+            <ul>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2023 My School. All rights reserved.</p>
        </div>
-     </div>
-     <div class="carousel-item">
-       
-       <div class="carousel-item-content">
-        <h1 class="carousel-header">Pleasure of secondary education</h1>
-        <p class="carousel-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fugiat, repellendus voluptatibus eius delectus in. Voluptatibus, nisi obcaecati harum amet aspern</p>
-				<div class="link-container">
-					<button>Get Babyeyi</button>
-					<button>Contact Us</button>
-				</div>
-       </div>
-     </div>
-     <div class="carousel-item">
-       <div class="carousel-item-content">
-        <h1 class="carousel-header">Welcome to mukingi secondary School</h1>
-        <p class="carousel-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fugiat, repellendus voluptatibus eius delectus in. Voluptatibus, nisi obcaecati harum amet aspern</p>
-				<div class="link-container">
-					<a href="./pages/Academic.html">
-						
-					<button class="babyeyiButton">Get Babyeyi
-					</button>
-					</a>
-					<button>Contact Us</button>
-				</div>
-       </div>
-     </div>
-   </div>
- </div>
+    </footer>
 
-  <!--carousel end-->
-	</header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<nav id="navbar-example2" class="navbar bg-body-tertiary px-2 mb-3">
-		<a class="navbar-brand" href="#">E.S. Mukingi</a>
-		<ul class="nav nav-pills">
-			<li class="nav-item">
-				<a class="nav-link" href="#scrollspyHeading1">Our best</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#scrollspyHeading2">About us</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#scrollspyHeading3">Courses</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#scrollspyHeading4">More</a>
-			</li>
-		</ul>
-	</nav>
-	<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary" tabindex="0" >
-		
-
-
-
-
-
-
-
-
-
-
-
-
-  
-<!-- section-->
-
-
-	<!--features section start-->
-
-	<h4 id="scrollspyHeading1" class="p first">Our Main Difference</h4> 
-<section class="esmtraits">
-
-	<div>
-		<section class="feature">
-			
-			<div class="main-traits">	
-					<div class="main-box">
-						<div class="icon">
-							<i class="fa fa-home"></i>
-						</div>
-						<h3>professional teacher</h3>
-					
-										<p>Lorem ipsum dolor sit amet consectetur
-											adipisicing elit. Et sunt ut hic ducimus
-											tempora omnis a suscipit</p>
-					
-					
-					</div>
-				
-			
-			
-					<div class="main-box">
-						<div class="icon">
-							<i class="fa fa-align-center"></i>
-						</div>
-						<h3>Quality education</h3>
-					
-										<p>Lorem ipsum dolor sit amet consectetur
-											adipisicing elit. Et sunt ut hic ducimus
-											tempora omnis a suscipit</p>
-					
-					
-					</div>
-				
-				
-				
-				
-				
-					<div class="main-box">
-						<div class="icon">
-							<i class="fa fa-bell"></i>
-						</div>
-						<h3>Always on time</h3>
-					
-										<p>Lorem ipsum dolor sit amet consectetur
-											adipisicing elit. Et sunt ut hic ducimus
-											tempora omnis a suscipit</p>
-					
-					
-					</div>
-				
-				
-				
-			
-			
-					<div class="main-box">
-						<div class="icon">
-							<i class="fa fa-bank"></i>
-						</div>
-						<h3>we are pacionates</h3>
-					
-										<p>Lorem ipsum dolor sit amet consectetur
-											adipisicing elit. Et sunt ut hic ducimus
-											tempora omnis a suscipit</p>
-					
-					
-					</div>
-				
-				</div>
-
-		</section>
-	</div>
-
-	</section>
-	<!--feature section end-->
-	
-	
-	<!--About section start-->
-	<div>
-		<h4 id="scrollspyHeading2" class="p">About Us</h4>
-		<section class="about">
-					<img src="./images/school_gate.JPG" alt="about image" class="about-img">
-				<div class="about-part">
-					<h3>Welcome to our school</h3>
-					
-					<div>
-									<p>veritatis nulla vitae, quo doloremque voluptatem
-									 essemollitia neque corrupti delectus aliquam
-									consequatur?</p>
-									<p>lorem ipsum dolor sit amet consectetur adipisicing
-									elit. Nihil, dignissimos nostrum iusto assumenda
-									 eaqu voluptate pariatur temporibus dolorem optio
-										odit placeatcum,illo?</p>
-					<p>lorem ipsum dolor sit amet consectetur adipisicing
-									elit. Nihil, dignissimos nostrum iusto assumenda
-									 eaqu voluptate pariatur temporibus dolorem optio
-										odit placeatcum, suscipit, beatae excepturi eius
-										 ea! Autem dolore illo?</p>
-										 </div>
-										 
-								<div class="buttons">
-									<a href="#">read more
-										<i class="fa fa-arrow-right"></i>
-									</a>
-								</div>
-						 
-			</div>
-		</section>
-	
-	</div>
-	<!--About section end-->
-	
-	
-	
-	
-	<!--Courses section start-->
-	<div>
-		<h4 id="scrollspyHeading3" class="p">Our Best Courses</h4>
-		<section class="courses px-4">
-													
-						<div class="courses-container">
-									
-							<div class="single-course-box">
-								<i class="fa-solid fa-computer icon"></i>
-								<h3>computer science</h3>
-							
-												<p>Lorem ipsum dolor sit amet consectetur
-													adipisicing elit. Et sunt ut hic ducimus
-													tempora omnis a suscipit</p>
-							
-											<div class="buttons">
-												<a href="#">read more
-													<i class="fa-solid fa-circle-arrow-right"></i>
-												</a>
-											</div>
-								
-							</div>
-						
-						
-							<div class="single-course-box">
-								<i class="fa-solid fa-comments-dollar icon"></i>
-								<h3>economics</h3>
-							
-												<p>Lorem ipsum dolor sit amet consectetur
-													adipisicing elit. Et sunt ut hic ducimus
-													tempora omnis a suscipit</p>
-							
-													<div class="buttons">
-														<a href="#">read more
-															<i class="fa-solid fa-circle-arrow-right"></i>
-														</a>
-											</div>
-								
-							</div>
-						
-						
-							<div class="single-course-box">
-								<div>	
-									<i class="fa-solid fa-calculator icon"></i>
-									<i class="fa-solid fa-brain icon"></i>
-								</div>
-								<h3>Mathematics</h3>
-							
-												<p>Lorem ipsum dolor sit amet consectetur
-													adipisicing elit. Et sunt ut hic ducimus
-													tempora omnis a suscipit</p>
-							
-													<div class="buttons">
-														<a href="#">read more
-															<i class="fa-solid fa-circle-arrow-right"></i>
-														</a>
-											</div>
-							</div>
-							
-						
-							<div class="single-course-box">
-								<i class="fa-solid fa-language icon"></i>
-								<h3>Languages</h3>
-							
-												<p>Lorem ipsum dolor sit amet consectetur
-													adipisicing elit. Et sunt ut hic ducimus
-													tempora omnis a suscipit</p>
-							
-													<div class="buttons">
-														<a href="#">read more
-															<i class="fa-solid fa-circle-arrow-right"></i>
-														</a>
-											</div>
-								
-							</div>
-						
-							<div class="single-course-box">
-								<div>
-									<i class="fa-solid fa-children icon"></i>
-									<i class="fa-solid fa-pen-to-square icon"></i>
-								</div>
-								<h3>O'level education</h3>
-							
-												<p>Lorem ipsum dolor sit amet consectetur
-													adipisicing elit. Et sunt ut hic ducimus
-													tempora omnis a suscipit</p>
-							
-													<div class="buttons">
-														<a href="#">read more
-															<i class="fa-solid fa-circle-arrow-right"></i>
-														</a>
-											</div>	
-							</div>
-							<div class="single-course-box">
-								<i class="fa-solid fa-hands-praying icon"></i>
-								<h3>ethical education</h3>
-							
-												<p>Lorem ipsum dolor sit amet consectetur
-													adipisicing elit. Et sunt ut hic ducimus
-													tempora omnis a suscipit</p>
-													<div class="buttons">
-														<a href="#">read more
-															<i class="fa-solid fa-circle-arrow-right"></i>
-														</a>
-											</div>
-							</div>
-						
-						</div>
-					
-		</section>
-	</div>
-	
-	<!--Courses section end-->
-	
-
-
-
-</div>
-
-<div class="sidebar">
-	<div class="sidebar-content">
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, aperiam deleniti. Id, fugiat? Quisquam culpa doloremque veniam laudantium, hic beatae id a tenetur dignissimos nobis rerum, ipsa maxime reiciendis laboriosam.</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo maiores optio tempora magni assumenda voluptates, aliquam error eius veritatis minus.</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quae aperiam tempore sapiente quo deleniti beatae qui, culpa magnam. Rem vero facilis explicabo, id sed cumque iusto eum dicta dolorum quibusdam provident ipsum assumenda maxime fugit maiores? Ab accusamus optio rem reprehenderit culpa asperiores voluptates placeat numquam! Tempore, deleniti magni.</p>
-		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti dolorem, minus ipsum sequi totam omnis sapiente inventore atque nisi harum quidem aspernatur quaerat sint nulla qui accusantium fuga eius exercitationem pariatur veniam quos cupiditate at. Temporibus sint delectus unde officiis voluptatum non. Eum, esse, eos itaque nobis optio magni enim provident laboriosam perferendis distinctio iure nihil. Cumque nobis error voluptatum repudiandae distinctio, laborum magnam. Quas, in asperiores, sit quo, provident cumque repellat ullam mollitia dignissimos eveniet beatae autem impedit harum ipsam quam cum quaerat! Vitae ea minus inventore possimus omnis, cupiditate rerum quam modi accusamus provident labore est sed voluptate?</p>
-		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab voluptates provident, recusandae blanditiis vel, laudantium magnam odio voluptatem sequi repudiandae neque perspiciatis? Ducimus excepturi cumque possimus accusantium. Quis, minus quasi?</p>
-	</div>
-</div>
-
- <footer>
-	<h4 id="scrollspyHeading4" class="p">Ecole Secondaire De Mukingi</h4>
-
-  <p>&copy; 2023 My School. All rights reserved.</p>
-	<a href="./pages/Code warriors members.html">
-		<p style="float: right;min-width: fit-content"><i class="fa-solid fa-code"></i>&nbsp;made by: <u>Code warriors</u></p>	
-	</a>
-</footer>
-
-	<script src="./javascript/home.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js" integrity="sha512-iVMJ92V3t9WRcFN1aaRpkwQbBCA4L9jx1Io5Bp+LZiaU63Cu/t98WIDH+Gi+Unmr2RQ6SqCDVewXQ1Sj2n7vcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
