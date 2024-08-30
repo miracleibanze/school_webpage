@@ -13,11 +13,11 @@ dropIcon.addEventListener('click', () => {
 
     if (dropMenu.classList.contains('active')) {
         dropMenu.classList.remove('active');
-        dropIcon.innerHTML = "<img src='./../assets/hamburger.svg' alt='hamburger'>"
+        dropIcon.innerHTML = "<img src='../assets/hamburger.svg' alt='hamburger'>"
     }
     else {
         dropMenu.classList.add('active');
-        dropIcon.innerHTML = "<img src='./../assets/x-tobe-sign.png' alt='X-icon'>"
+        dropIcon.innerHTML = "<img src='../assets/x-tobe-sign.png' alt='X-icon'>"
     }
 })
 
@@ -25,7 +25,7 @@ window.onscroll = () => {
     const imageCard = document.querySelector('.libraryToggle');
     if (dropMenu.classList.contains('active')) {
         dropMenu.classList.remove('active')
-        dropIcon.innerHTML = "<img src='./../assets/hamburger.svg' alt='hamburger'>"
+        dropIcon.innerHTML = "<img src='../assets/hamburger.svg' alt='hamburger'>"
     }
     if (imageCard.classList.contains('show')) {
         imageCard.classList.remove('show')

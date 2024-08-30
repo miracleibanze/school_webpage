@@ -199,14 +199,14 @@ nav ul li:hover{
     padding: 4rem;
 }
 .carousel-img-1{
-    background-image: url('./assets/school-attention.JPG');
+    background-image: url('assets/school-attention.JPG');
     background-position-x: 70%;
 }
 .carousel-img-2{
-    background-image: url('./assets/school-boys.JPG');
+    background-image: url('assets/school-boys.JPG');
 }
 .carousel-img-3{
-    background-image: url('./assets/class-view.jpg');
+    background-image: url('assets/class-view.jpg');
     
 }
 
@@ -267,16 +267,16 @@ section h1{
     background-size: cover ;
 }
 .Our-best-box.teachers{
-    background-image: url('./assets/graduated-student.JPG');
+    background-image: url('assets/graduated-student.JPG');
 }
 .Our-best-box.education{
-    background-image: url('./assets/key-to-graduation.JPG');
+    background-image: url('assets/key-to-graduation.JPG');
 }
 .Our-best-box.time{
-    background-image: url('./assets/clock-ticking.JPG');
+    background-image: url('assets/clock-ticking.JPG');
 }
 .Our-best-box.passionate{
-    background-image: url('./assets/award.JPG');
+    background-image: url('assets/award.JPG');
 }
 .Our-best-box:hover{
     transform: translate(-5px, -5px);
@@ -436,7 +436,7 @@ footer {
     pointer-events: none;
     width: 100%;
     height: max-content;
-    background-image: url('./assets/assemble-time.jpg');
+    background-image: url('assets/assemble-time.jpg');
     background-size: cover;
     z-index: 1;
     display: flex;
@@ -456,7 +456,7 @@ footer h1{
     font-weight: bolder;
     text-transform: uppercase;
     height: inherit;
-    background-image: url('./assets/assemble-time.jpg');
+    background-image: url('assets/assemble-time.jpg');
     background-size: cover;
     color: #00000000;
     background-clip: text;

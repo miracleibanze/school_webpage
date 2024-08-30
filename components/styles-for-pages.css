@@ -377,28 +377,28 @@ td:has(img):hover{
   aspect-ratio: 7/5;
 }
 .libraryImage-container .imageWrapper:nth-child(1) div{
-  background-image: url('./../assets/lunch-time.jpg');
+  background-image: url('../assets/lunch-time.jpg');
 }
 .libraryImage-container .imageWrapper:nth-child(2) div{
-  background-image: url('./../assets/school-attention.JPG');
+  background-image: url('../assets/school-attention.JPG');
 }
 .libraryImage-container .imageWrapper:nth-child(3) div{
-  background-image: url('./../assets/students-talk.jpg');
+  background-image: url('../assets/students-talk.jpg');
 }
 .libraryImage-container .imageWrapper:nth-child(4) div{
-  background-image: url('./../assets/assemble-time.jpg');
+  background-image: url('../assets/assemble-time.jpg');
 }
 .libraryImage-container .imageWrapper:nth-child(5) div{
-  background-image: url('./../assets/refectory-view-sit.jpg');
+  background-image: url('../assets/refectory-view-sit.jpg');
 }
 .libraryImage-container .imageWrapper:nth-child(6) div{
-  background-image: url('./../assets/three-esm-student.JPG');
+  background-image: url('../assets/three-esm-student.JPG');
 }
 .libraryImage-container .imageWrapper:nth-child(7) div{
-  background-image: url('./../assets/parental meeting.JPG');
+  background-image: url('../assets/parental meeting.JPG');
 }
 .libraryImage-container .imageWrapper:nth-child(8) div{
-  background-image: url('./../assets/refectory-view-sit.jpg');
+  background-image: url('../assets/refectory-view-sit.jpg');
 }
 
 .libraryToggleclose{
@@ -542,7 +542,7 @@ section.address{
   height: max-content;
 }
 .location{
-  background-image: url('./../assets/location.png');
+  background-image: url('../assets/location.png');
   background-size: cover;
   width: 50%;
   background-position-y: bottom;
