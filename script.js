@@ -1,7 +1,13 @@
+window.addEventListener("load", () => {
+    const preloader = document.querySelector(".preloader");
+    preloader.classList.add("load-finish");
+})
+
+
 const dropIcon = document.querySelector('.hamburger');
+const dropMenu = dropIcon.parentElement;
 
 dropIcon.addEventListener('click', () => {
-    const dropMenu = dropIcon.parentElement;
 
     if (dropMenu.classList.contains('active')) {
         dropMenu.classList.remove('active');
@@ -12,3 +18,10 @@ dropIcon.addEventListener('click', () => {
         dropIcon.innerHTML = "<img src='./assets/x-tobe-sign.png' alt='hamburger'>"
     }
 })
+
+window.onscroll = () => {
+    if (dropMenu.classList.contains('active')) {
+        dropMenu.classList.remove('active')
+        dropIcon.innerHTML = "<img src='./assets/hamburger.svg' alt='hamburger'>"
+    }
+}

@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="./styles-for-pages.css">
 </head>
 <body>
+    <div class="preloader">
+        <div class="loaderWrapper">
+            <img src="./../assets/preLoader.png" alt="preloader">
+            <p>Please wait...</p>
+        </div>
+    </div>
     <header>
         <nav>
             <a href="/"><img src="./../assets/header-logo.png" alt="logo" class="logo"></a>
@@ -22,16 +28,130 @@
                     <a href="/"><li><i class="fa fa-home"></i>&nbsp;Home</li></a>
                     <a href="./About.html"><li><i class="fa fa-users"></i>&nbsp;About</li></a>
                     <a href="./Blog.html"><li><i class="fa fa-clone"></i>&nbsp;Blog</li></a>
-                    <a href="./Courses.html"><li><i class="fa fa-graduation-cap"></i>&nbsp;Courses</li></a>
+                    <a href="./Library.html"><li><i class="fa fa-graduation-cap"></i>&nbsp;Library</li></a>
                     <a href="./Contact.html"><li><i class="fa fa-phone"></i>Contact</li></a>
+					
                 </ul>
             </div>
 
         </nav>
+        
+        <div class="carousel">
+            <div class="header-title">
+                <h1>Contact /</h1>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel-img-1"></div>
+                <div class="carousel-img-2"></div>
+                <div class="carousel-img-3"></div>
+                <div class="carousel-img-1"></div>
+            </div>
+        </div>
     </header>
 
 
+    
+	
+	<section class="address">
+        <h1>Visit us</h1>
+		<div class="location"></div>
+		<div class="location-description">
+			<div>
+				<h2>Location :</h2>
+                <ul>
+                    <li><img src="./../assets/currentLocationArrow.png" alt="-">Rwanda,</li>
+                    <li><img src="./../assets/currentLocationArrow.png" alt="-">Southern province,</li>
+                    <li><img src="./../assets/currentLocationArrow.png" alt="-">Ruhango district,</li>
+                    <li><img src="./../assets/currentLocationArrow.png" alt="-">Byimana sector,</li>
+                    <li><img src="./../assets/currentLocationArrow.png" alt="-">Kamusenyi cell</li>
+                </ul>
+			</div>
+            <div>
+                <h2>Contact help :</h2>
+                <ul>
+                    <li><img src="./../assets/SendPhone.scale-100.png" alt="-">0788888888</li>
+                    <li><img src="./../assets/SendPhone.scale-100.png" alt="-">0788888888</li>
+                </ul>
+			</div>
+		</div>
+	</section>
 
+	<section class="message-on-contact" id="contact">
+        <h1>Get In Touch With Us</h1>
+		<form action="" method="post">
+			
+            <label class="typable" for="name"><p>Enter Your Full Names</p>
+            <input type="text" name="name" placeholder="Full Names" class="names"></label>
+			
+            <label class="typable" for="E-mail"><p>Enter Your E-mail</p>
+            <input type="email" name="E-mail" placeholder="....@gmail.com" class="email"></label>
+			
+            <label class="typable" for="message"><p>Message</p>
+            <textarea name="message" rows="8" placeholder="Enter your message here..."></textarea></label>
+			
+            <div class="choose-category">
+                <h4>Category: </h4>
+				<div>
+					<input type="radio" name="category" id="">Student
+				</div>
+				<div class="Parent">
+					<input type="radio" name="category" id="">Parent
+				</div>
+			</div>
+			<input class="send-message" type="submit" value="Send Message">
+		</form>
+        <div>
+           <span> <img src="./../assets/whatsapp-icon.png" alt="icon"/ class="large-icon"> 07888883823</span>
+           <span><img src="../assets/email-icon.png" alt="icon" class="small-icon">esmukingi1996@yahoo.com</span>
+            <span><img src="../assets/SendPhone.scale-100.png" alt="icon" class="large-icon">07888888888</span>
+        </div>
+	</section>
+
+
+
+
+    
+   
+
+    
+    <footer id="Footer">
+        <div class="img-footer">
+             <div>
+                     
+                 <h1>Mukingi</h1>
+             </div>
+         </div>
+         <div class="footer-navigation">
+                 
+             <a href="./Library.html"><ul>
+                 <li>Top Courses</li>
+                 <li>Computer Science</li>
+                 <li>Mathematics</li>
+                 <li>Economics</li>
+                 <li>Languages</li>
+                 <li>O'level education</li>
+                 <li>Ethical education</li>
+             </ul></a>
+             <a href="./Contact.html"><ul class="right">
+                 <li>Quick Links</li>
+                 <li>Facebook</li>
+                 <li>Twitter</li>
+                 <li>Instagram</li>
+                 <li>Whatsapp</li>
+             </ul></a>
+             <a href="./About.html"><ul>
+                 <li>Best supported by:</li>
+                 <li>Professional Teachers</li>
+                 <li>Quality Education</li>
+                 <li>Always on time</li>
+                 <li>Passion</li>
+             </ul></a>
+             <ul>
+         </div>
+         <div class="footer-copyright">
+             <p>&copy;2024 E.S. Mukingi. All rights reserved by <a href="http://github.com/miracleibanze"><u>IBANZE Miracle</u></a></p>
+        </div>
+     </footer>
     <script src="./script-for-pages.js"></script>
 </body>
 </html>

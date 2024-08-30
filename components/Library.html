@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E.S Mukingi: Library at our school</title>
+    <link rel="shortcut icon" href="./../assets/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./../assets/css/all.min.css">
+    <link rel="stylesheet" href="./../assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./../style.css">
+    <link rel="stylesheet" href="./styles-for-pages.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="loaderWrapper">
+            <img src="./../assets/preLoader.png" alt="preloader">
+            <p>Please wait...</p>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <a href="/"><img src="./../assets/header-logo.png" alt="logo" class="logo"></a>
+            <div class="nav-links">
+               <div class="hamburger"> 
+                    <img src="./../assets/hamburger.svg" alt="hamburger">
+                </div>
+                <ul class="menu">
+                    <a href="/"><li><i class="fa fa-home"></i>&nbsp;Home</li></a>
+                    <a href="./About.html"><li><i class="fa fa-users"></i>&nbsp;About</li></a>
+                    <a href="./Blog.html"><li><i class="fa fa-clone"></i>&nbsp;Blog</li></a>
+                    <a href="./Library.html"><li><i class="fa fa-graduation-cap"></i>&nbsp;Library</li></a>
+                    <a href="./Contact.html"><li><i class="fa fa-phone"></i>Contact</li></a>
+					
+                </ul>
+            </div>
+
+        </nav>
+        <div class="carousel">
+            <div class="header-title">
+                <h1>Library /</h1>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel-img-1">
+                </div>
+                <div class="carousel-img-2">
+                </div>
+                <div class="carousel-img-3">
+                </div>
+                <div class="carousel-img-1">
+                </div>
+            </div>
+        </div>
+    </header>
+	<section class="Photos">
+			<h1>Pictures</h1>
+			<div class="img-container">
+				<div class="img-in-course-section" onclick="handleImageToggle(1)">
+					<img src="./../assets/lunch-time.jpg" alt="">
+					<a href="/" download="..." target="_blank" rel="noopener noreferrer">
+						<img src="./../assets/download-icon.png" alt="download image">
+					</a>
+				</div>
+				<div class="img-in-course-section" onclick="handleImageToggle(2)">
+					<img src="./../assets/school-attention.JPG" alt="">
+					<a href="/" download="..." target="_blank" rel="noopener noreferrer">
+						<img src="./../assets/download-icon.png" alt="download image">
+					</a>
+				</div>
+				<div class="img-in-course-section" onclick="handleImageToggle(3)">
+					<img src="./../assets/students-talk.jpg" alt="">
+					<a href="/" download="..." target="_blank" rel="noopener noreferrer">
+						<img src="./../assets/download-icon.png" alt="download image">
+					</a>					
+				</div>
+				<div class="img-in-course-section" onclick="handleImageToggle(4)">
+					<img src="./../assets/assemble-time.jpg" alt="">
+					<a href="/" download="..." target="_blank" rel="noopener noreferrer">
+						<img src="./../assets/download-icon.png" alt="download image">
+					</a>	
+				</div>
+				<div class="img-in-course-section" onclick="handleImageToggle(5)">
+					<img src="./../assets/refectory-view-sit.jpg" alt="">
+					<a href="/" download="..." target="_blank" rel="noopener noreferrer">
+						<img src="./../assets/download-icon.png" alt="download image">
+					</a>
+				</div>
+				<div class="img-in-course-section" onclick="handleImageToggle(6)">
+					<img src="./../assets/three-esm-student.JPG" alt="">
+					<a href="/" download="..." target="_blank" rel="noopener noreferrer">
+						<img src="./../assets/download-icon.png" alt="download image">
+					</a>
+				</div>
+				<div class="img-in-course-section" onclick="handleImageToggle(7)">
+					<img src="./../assets/parental meeting.JPG" alt="">
+					<a href="/" download="..." target="_blank" rel="noopener noreferrer">
+						<img src="./../assets/download-icon.png" alt="download image">
+					</a>
+				</div>
+				<div class="img-in-course-section" onclick="handleImageToggle(8)">
+					<img src="./../assets/refectory-view-sit.jpg" alt="">
+					<a href="/" download="..." target="_blank" rel="noopener noreferrer">
+						<img src="./../assets/download-icon.png" alt="download image">
+					</a>
+				</div>
+
+
+				<div class="libraryToggle">
+					<div class="libraryToggleclose"> 
+						 <img src="./../assets/close.png" alt="hamburger">
+					 </div>
+					<div class="libraryImage-container">
+						<div class="imageWrapper"><div></div></div>
+						<div class="imageWrapper"><div></div></div>
+						<div class="imageWrapper"><div></div></div>
+						<div class="imageWrapper"><div></div></div>
+						<div class="imageWrapper"><div></div></div>
+						<div class="imageWrapper"><div></div></div>
+						<div class="imageWrapper"><div></div></div>
+						<div class="imageWrapper"><div></div></div>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+			</div>
+</section>
+<section id="courses">
+		<h1>Studies</h1>
+			<div class="notice"><i class="fa-solid fa-circle-info"></i>Prepare your Studies by downloading your respective <i><u>Book</u></i> or <i><u>Sylabus</u></i> to the class you study in.</div>
+			<div class="downloadTable">
+				<table class="oneLevelTable">
+					<tr>
+						<th colspan="3">O'level Education</th>
+					</tr>
+					<tr>
+						<td>Class</td>
+						<td>Books</td>
+						<td>Sylabus</td>
+					</tr>
+					<tr>
+						<td>Senior 1</td>
+						<td><img src="./../assets/download-icon.png" alt="Download"></td>
+						<td><img src="./../assets/download-icon.png" alt="Download"></td>
+					</tr>
+					<tr>
+						<td>Senior 2</td>
+						<td><img src="./../assets/download-icon.png" alt="Download"></td>
+						<td><img src="./../assets/download-icon.png" alt="Download"></td>
+					</tr>
+					<tr>
+						<td>Senior 3</td>
+						<td><img src="./../assets/download-icon.png" alt="Download"></td>
+						<td><img src="./../assets/download-icon.png" alt="Download"></td>
+					</tr>
+				</table><table class="oneLevelTable">
+					<tr>
+						<th colspan="3">A'level Education</th>
+					</tr>
+					<tr>
+						<td>Class</td>
+						<td>Books</td>
+						<td>Sylabus</td>
+					</tr>
+					<tr>
+						<td>Senior 4</td>
+						<td><img src="./../assets/download-icon.png" alt="Download"></td>
+						<td><img src="./../assets/download-icon.png" alt="Download"></td>
+					</tr>
+					<tr>
+						<td>Senior 5</td>
+						<td><img src="./../assets/download-icon.png" alt="Download"></td>
+						<td><img src="./../assets/download-icon.png" alt="Download"></td>
+					</tr>
+					<tr>
+						<td>Senior 6</td>
+						<td><img src="./../assets/download-icon.png" alt="Download"></td>
+						<td><img src="./../assets/download-icon.png" alt="Download"></td>
+					</tr>
+				</table>
+				<table class="Babyeyi">
+					<tr>
+						<th colspan="8">Students property Document ( 'Babyeyi' )</th>
+					</tr>
+					<tr>
+						<td class="light" colspan="4">Ordinary level</td>
+						<td class="light" colspan="4">Advanced level</td>
+					</tr>
+					<tr>
+						<td>S1</td>
+						<td rowspan="2"><img src="../assets/download-icon.png" alt="download"></td>
+						<td rowspan="2">S3</td>
+						<td rowspan="2"><img src="../assets/download-icon.png" alt=""></td>
+						<td>S4</td>
+						<td rowspan="2"><img src="../assets/download-icon.png" alt=""></td>
+						<td rowspan="2">S6</td>
+						<td rowspan="2"><img src="../assets/download-icon.png" alt=""></td>
+					</tr>
+					<tr>
+						<td>S2</td>
+						<td>S5</td>
+					</tr>
+
+				</table>
+	
+			</div>
+
+
+
+	</section>
+
+
+    
+    <footer id="Footer">
+        <div class="img-footer">
+             <div>
+                     
+                 <h1>Mukingi</h1>
+             </div>
+         </div>
+         <div class="footer-navigation">
+                 
+             <a href="./Library.html"><ul>
+                 <li>Top Courses</li>
+                 <li>Computer Science</li>
+                 <li>Mathematics</li>
+                 <li>Economics</li>
+                 <li>Languages</li>
+                 <li>O'level education</li>
+                 <li>Ethical education</li>
+             </ul></a>
+             <a href="./Contact.html"><ul class="right">
+                 <li>Quick Links</li>
+                 <li>Facebook</li>
+                 <li>Twitter</li>
+                 <li>Instagram</li>
+                 <li>Whatsapp</li>
+             </ul></a>
+             <a href="./About.html"><ul>
+                 <li>Best supported by:</li>
+                 <li>Professional Teachers</li>
+                 <li>Quality Education</li>
+                 <li>Always on time</li>
+                 <li>Passion</li>
+             </ul></a>
+             <ul>
+         </div>
+		 <div class="footer-copyright">
+			 <p>&copy;2024 E.S. Mukingi. All rights reserved by <a href="http://github.com/miracleibanze"><u>IBANZE Miracle</u></a></p>
+		</div>
+     </footer>
+    <script src="./script-for-pages.js"></script>
+</body>
+</html>

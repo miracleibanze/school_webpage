@@ -6,11 +6,62 @@
     font-family: 'poppins',sans-serif;
     box-sizing: border-box;
 }
+.preloader{
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: linear-gradient(to right,#1e293b, #020617);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.load-finish{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    animation: optOut 1.5s ease-in-out forwards;
+    pointer-events:none;
+  }
+
+  @keyframes optOut{
+    0%,
+    80%{opacity: 1;}
+    100%{opacity: 0;z-index: -100;display: none;}
+  }
+    
+
+.loaderWrapper{
+    width: max-content;
+}
+
+.loaderWrapper img{
+    width: 8rem;
+    animation-timing-function: linear;
+    animation: preLoader 3s ease-in-out infinite forwards;
+    transform-origin: center;
+}
+@keyframes preLoader {
+    from{
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(1800deg);
+    }
+}
+
 :root{
     --text-color-on-dark: #fffffff9;
     --text-color-on-white: #000000df;
     --blue-400: #60a5fa;
+    --darkest-bg: #020617;
+    --blue-100: #dbeafe;
     --light-bg: #60a5fa23;
+}
+a{
+    color: var(--text-color-on-dark);
 }
 span{
     font-family: inherit;
@@ -27,6 +78,13 @@ span{
     transform: translate(-3px, -3px);
     box-shadow: 6px 6px 0 0 #60a5fa;
 }
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(blue, lightblue, green);
+    border-radius: 10px;
+}
+::-webkit-scrollbar{
+    background: var(--darkest-bg);
+}
 
 body{
     background: linear-gradient(to right,#1e293b, #020617);
@@ -41,6 +99,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     padding: 4rem 2rem;
+    margin: 4rem 0;
     justify-content: center;
 }
 header{
@@ -48,6 +107,7 @@ header{
     min-height: 100vh;
     max-height: 100vh;
     position: relative;
+    
 }
 nav{
     position: absolute;
@@ -59,11 +119,12 @@ nav{
     background-color: #ffffffec;
     color: var(--text-color-on-white);
     padding: 0 3rem;
+    z-index: 999;
 }
 .logo{
     position: relative;
     top: 1rem;
-    width: 5.5rem;
+    width: 5.8rem;
     aspect-ratio: 6/7;
     background-color: #ffffffec;
 
@@ -81,6 +142,7 @@ nav ul{
 nav a{
     text-decoration: none;
     color: var(--text-color-on-white);
+    font-size: vw;
 }
 nav ul li{
     height: 50%;
@@ -106,19 +168,19 @@ nav ul li:hover{
     display: flex;
     height: 100%;
     width: 400vw;
-    animation: carousel-move 10s ease-in-out infinite;
+    animation: carousel-move 20s ease-in-out infinite;
 }
 @keyframes carousel-move{
     0%,
-    20%{
+    25%{
         transform: translateX(0);
     }
     30%,
-    50%{
+    55%{
         transform: translateX(-100vw);
     }
     60%,
-    80%{
+    85%{
         transform: translateX(-200vw);
     }
     90%,
@@ -185,9 +247,9 @@ section.page-navigation{
 }
 section h1{
     width: 100%;
-    position: absolute;
+    position: relative;
     margin-top: -3rem;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .Our-best-box{
@@ -248,7 +310,8 @@ section h1{
     gap: 2rem;
     height: auto;
     background-color: var(--light-bg);
-    margin: 3rem 0;
+    margin: 5rem 0;
+    padding: 4rem 2rem;
 }
 
 #About img{
@@ -280,6 +343,10 @@ section h1{
     color: var(--text-color-on-dark);
     border: 2px solid var(--blue-400);
     margin-bottom: 3px;
+}
+.buttons a{
+    color: var(--text-color-on-dark);
+    text-decoration: none;
 }
 .about-part .buttons i{
     font-size: 1.2rem;
@@ -316,12 +383,15 @@ section h1{
     
 }
 
-.courses-container i.icon{
-    width: auto;
+i.icon{
+    width: 6rem;
+    height: 6rem;
     font-size: 3em;
     background: linear-gradient(blue,red,green);
-    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
     color: transparent;
+    border-bottom: 5px solid green;
 
 }
 
@@ -399,7 +469,7 @@ footer .footer-navigation{
     padding: 3rem 0;
 }
 
-.footer-navigation a{
+footer a{
     text-decoration: none;
     color: var(--text-color-on-dark);
 }
@@ -416,7 +486,9 @@ footer .footer-navigation{
     font-weight: bolder;
     font-size: larger;
 }
-
+.footer-copyright{
+    padding: 2rem 0;
+}
 
 
 
@@ -426,7 +498,7 @@ footer .footer-navigation{
 
 @media (max-width: 769px){
     nav{
-        padding: 0 1rem;
+        padding: 0 2rem;
     }
     .logo{
         width: 5rem;
@@ -451,6 +523,26 @@ footer .footer-navigation{
     .page-navigation{
         gap: 0;
     }
+    
+    #About{
+        height: fit-content;
+        flex-direction: column;
+        padding-top: 10rem;
+    }
+    #About h1{
+        position: relative;
+    }
+        
+    #About img{
+        width: 100%;
+    }
+    
+    #About .about-part{
+        width: 100%;
+    }
+
+
+
     .courses-container{
         width: 95%;
     }
@@ -478,8 +570,11 @@ footer .footer-navigation{
      }
 }
 @media (max-width: 540px){
+    header {
+        min-height: 70vh;
+    }
     nav{
-        height: 5rem;
+        height: 4rem;
     }
     .logo{
         top: 1rem;
@@ -492,7 +587,7 @@ footer .footer-navigation{
         display: flex;
     }
     .hamburger img{
-        width: 4rem;
+        width: 3rem;
         position: absolute;
         top: .4rem;
         right: 1.5rem;
@@ -565,22 +660,6 @@ footer .footer-navigation{
         font-size: smaller;
         margin-top: 1rem;
     }
-    #About{
-        height: fit-content;
-        flex-direction: column;
-        padding-top: 10rem;
-    }
-    #About h1{
-        position: relative;
-    }
-        
-    #About img{
-        width: 100%;
-    }
-    
-    #About .about-part{
-        width: 100%;
-    }
     .footer-navigation{
         flex-direction: column;
     }
@@ -603,7 +682,7 @@ footer .footer-navigation{
 @media (max-width: 888px){
         
 @media (min-width: 770px){
-        
+     
     footer h1{
         font-size: 8rem;
     }
