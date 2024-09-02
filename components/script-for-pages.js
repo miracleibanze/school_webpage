@@ -73,3 +73,14 @@ imageToggle.addEventListener('click', () => {
         imageContainer.classList.remove('ml8')
     }
 })
+
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_wpb2ogc', 'service_wpb2ogc', this)
+        .then(function() {
+            alert('Message sent successfully!');
+        }, function(error) {
+            alert('Failed to send message. Please try again.');
+        });
+});

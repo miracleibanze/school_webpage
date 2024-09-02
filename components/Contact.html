@@ -76,28 +76,35 @@
 
 	<section class="message-on-contact" id="contact">
         <h1>Get In Touch With Us</h1>
-		<form action="" method="post">
-			
-            <label class="typable" for="name"><p>Enter Your Full Names</p>
-            <input type="text" name="name" placeholder="Full Names" class="names"></label>
-			
-            <label class="typable" for="E-mail"><p>Enter Your E-mail</p>
-            <input type="email" name="E-mail" placeholder="....@gmail.com" class="email"></label>
-			
-            <label class="typable" for="message"><p>Message</p>
-            <textarea name="message" rows="8" placeholder="Enter your message here..."></textarea></label>
-			
+		<form>
+            <label class="typable" for="name">
+                <p>Enter Your Full Names</p>
+                <input type="text" name="name" placeholder="Full Names" class="names" required>
+            </label>
+        
+            <label class="typable" for="email">
+                <p>Enter Your E-mail</p>
+                <input type="email" name="email" placeholder="....@gmail.com" class="email" required>
+            </label>
+        
+            <label class="typable" for="message">
+                <p>Message</p>
+                <textarea name="message" rows="8" placeholder="Enter your message here..." required></textarea>
+            </label>
+        
             <div class="choose-category">
                 <h4>Category: </h4>
-				<div>
-					<input type="radio" name="category" id="">Student
-				</div>
-				<div class="Parent">
-					<input type="radio" name="category" id="">Parent
-				</div>
-			</div>
-			<input class="send-message" type="submit" value="Send Message">
-		</form>
+                <div>
+                    <input type="radio" name="category" value="Student" required> Student
+                </div>
+                <div class="Parent">
+                    <input type="radio" name="category" value="Parent" required> Parent
+                </div>
+            </div>
+        
+            <input class="send-message" type="submit" value="Send Message">
+        </form>
+        
         <div>
            <span> <img src="../assets/whatsapp-icon.png" alt="icon"/ class="large-icon"> 07888883823</span>
            <span><img src="../assets/email-icon.png" alt="icon" class="small-icon">esmukingi1996@yahoo.com</span>
@@ -150,6 +157,14 @@
              <p>&copy;2024 E.S. Mukingi. All rights reserved by <a href="http://github.com/miracleibanze"><u>IBANZE Miracle</u></a></p>
         </div>
      </footer>
-    <script src="script-for-pages.js"></script>
+    <script src="script-for-pages.js">
+
+    </script><script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("In1uOs8_YSq33uAf-");
+        })();
+    </script>
+    
 </body>
 </html>
