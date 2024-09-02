@@ -74,10 +74,12 @@ imageToggle.addEventListener('click', () => {
     }
 })
 
-document.querySelector('form').addEventListener('submit', function(event) {
-    event.preventDefault();
 
-    emailjs.sendForm('service_wpb2ogc', 'service_wpb2ogc', this)
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    emailjs.sendForm('service_wpb2ogc', 'template_z3ck8c9', this)
         .then(function() {
             alert('Message sent successfully!');
         }, function(error) {
