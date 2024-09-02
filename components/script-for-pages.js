@@ -72,7 +72,7 @@ imageToggle.addEventListener('click', () => {
     else {
         imageContainer.classList.remove('ml8')
     }
-})
+});
 
 
 
