@@ -38,10 +38,18 @@ html{
 
 .loaderWrapper{
     width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.loaderWrapper img{
+.loaderWrapper .img{
+    background-image: url('./assets/preloader.png');
+    background-position: center;
+    background-size: cover;
     width: 3rem;
+    height: 3rem;
     animation-timing-function: linear;
     animation: preLoader 3s ease-in-out infinite forwards;
     transform-origin: center;
