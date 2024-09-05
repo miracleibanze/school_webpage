@@ -41,10 +41,11 @@ html{
 }
 
 .loaderWrapper img{
-    width: 8rem;
+    width: 3rem;
     animation-timing-function: linear;
     animation: preLoader 3s ease-in-out infinite forwards;
     transform-origin: center;
+    transform: rotateY(180deg);
 }
 @keyframes preLoader {
     from{
@@ -500,6 +501,9 @@ footer a{
 
 
 @media (max-width: 769px){
+    body{
+        max-width: 100vw;
+    }
     nav{
         padding: 0 2rem;
     }
@@ -526,7 +530,15 @@ footer a{
     .page-navigation{
         gap: 0;
     }
+    .Our-best-box h3,
+    .Our-best-box p{
+        background-color: #000000d0;
+    }
     
+    .Our-best-box p{
+        box-shadow: 0 2rem 2rem 3rem #000000d0;
+    }
+
     #About{
         height: fit-content;
         flex-direction: column;
@@ -543,7 +555,6 @@ footer a{
     #About .about-part{
         width: 100%;
     }
-
 
 
     .courses-container{
@@ -581,19 +592,23 @@ footer a{
     }
     .logo{
         top: 1rem;
-        width: 4.5rem;
+        width: 4rem;
     }
     nav ul{
         display: none;
     }
     .hamburger{
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        padding: 0.5rem;
         display: flex;
+        justify-content: end;
+        align-items: center;
     }
     .hamburger img{
         width: 3rem;
-        position: absolute;
-        top: .4rem;
-        right: 1.5rem;
+        position: relative;
     }
     .nav-links.active ul li{
         height: fit-content;
@@ -614,11 +629,15 @@ footer a{
         gap: 5vh;
         font-size: 1.8em;
     }
-    .nav-links.active .hamburger img{
+    
+    .nav-links.active .hamburger{
         position: absolute;
-        top: 1rem;
-        right: 1.5rem;
-        width: 4rem;
+        top: 0;
+        right: 1rem;
+    }
+    .nav-links.active .hamburger img{
+        position: relative;
+        width: 3rem;
         animation: hamburgerSpin 1.5s ease-in-out forwards;
     }
     @keyframes hamburgerSpin{

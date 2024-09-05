@@ -818,6 +818,10 @@ div:has(span) span .small-icon{
     gap: 2rem;
   }
   .testmony-from-persons .testmonyContent{
-    width: 1005;
+    width: 100%;
+  }
+  section#testimanials.testmony-from-persons div.testmonyContent h2 i{
+    font-size: 70%;
+    line-height: 1;
   }
 }
